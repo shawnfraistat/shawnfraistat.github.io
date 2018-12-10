@@ -71,6 +71,20 @@ h3{
   justify-content: center;
 }
 
+.encourage-div {
+  background-image: url('../../public/images/encourage-screen-static.gif');
+  background-size: 100% 200px;
+  background-repeat: no-repeat;
+  border-bottom: 1px solid lightgrey;
+  height: 200px;
+  width: 100%;
+  z-index: 1000;
+}
+
+.encourage-div:hover {
+  background-image: url('../../public/images/encourage-screen.gif');
+}
+
 .my-photo {
   position: relative;
   width: 200px;
@@ -95,6 +109,20 @@ h3{
   padding-left: 0px;
 }
 
+.simon-div {
+  background-image: url('../../public/images/simon-screen-static2.gif');
+  background-size: 100% 200px;
+  background-repeat: no-repeat;
+  border-bottom: 1px solid lightgrey;
+  height: 200px;
+  width: 100%;
+  z-index: 1000;
+}
+
+.simon-div:hover {
+  background-image: url('../../public/images/simon-screen2.gif');
+}
+
 .skill-list {
   border: 5px solid black;
   border-radius: 50px;
@@ -103,6 +131,21 @@ h3{
   justify-content: center;
   padding: 20px;
 }
+
+.tic-tac-toe-div {
+  background-image: url('../../public/images/tic-tac-toe-screen-static.gif');
+  background-size: 100% 200px;
+  background-repeat: no-repeat;
+  border-bottom: 1px solid lightgrey;
+  height: 200px;
+  width: 100%;
+  z-index: 1000;
+}
+
+.tic-tac-toe-div:hover {
+  background-image: url('../../public/images/tic-tac-toe-screen.gif');
+}
+
 
 .top-header {
   position: relative;
