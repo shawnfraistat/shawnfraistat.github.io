@@ -3,9 +3,102 @@
  * Copyright 2013-2017 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-scrolling-nav/blob/master/LICENSE)
  */
-
 body {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
+}
+
+div.about-div {
+  opacity: 0;
+  transition: 1s;
+  position: relative;
+  left: -300px;
+}
+div.accent-bar {
+  background-color: #587297;
+  height: 10px;
+  width: 50px;
+}
+div.contact-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+div.encourage-div {
+  background-image: url("../../public/images/encourage-screen-static.gif");
+  background-size: 100% 200px;
+  background-repeat: no-repeat;
+  border-bottom: 1px solid lightgrey;
+  height: 200px;
+  transition: 0.1s;
+  width: 100%;
+  z-index: 1000;
+}
+div.encourage-div:hover {
+  background-image: url("../../public/images/encourage-screen.gif");
+}
+div.name-section {
+  padding: 10px 0 20px 0;
+  height: 130px;
+}
+div.section-header {
+  padding-bottom: 30px;
+  padding-left: 0px;
+}
+div.simon-div {
+  background-image: url("../../public/images/simon-screen-static2.gif");
+  background-size: 100% 200px;
+  background-repeat: no-repeat;
+  border-bottom: 1px solid lightgrey;
+  height: 200px;
+  transition: 0.1s;
+  width: 100%;
+  z-index: 1000;
+}
+div.simon-div:hover {
+  background-image: url("../../public/images/simon-screen2.gif");
+}
+div.skill-list {
+  border: 5px solid black;
+  border-radius: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+div.tic-tac-toe-div {
+  background-image: url("../../public/images/tic-tac-toe-screen-static.gif");
+  background-size: 100% 200px;
+  background-repeat: no-repeat;
+  border-bottom: 1px solid lightgrey;
+  height: 200px;
+  transition: 0.1s;
+  width: 100%;
+  z-index: 1000;
+}
+div.tic-tac-toe-div:hover {
+  background-image: url("../../public/images/tic-tac-toe-screen.gif");
+}
+div.top-header {
+  position: relative;
+  width: 100vw;
+  top: 193px;
+}
+
+h1 {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 50px;
+  font-weight: 600;
+}
+
+h2 {
+  font-family: "Anton", sans-serif;
+  font-size: 40px;
+}
+
+h3 {
+  font-family: "Raleway", sans-serif;
+  font-size: 30px;
+  font-weight: 800;
 }
 
 header {
@@ -13,8 +106,7 @@ header {
   width: 100vw;
   height: 410px;
 }
-
-header::after {
+header:after {
   content: "";
   background-image: url("../../public/images/top-image6.png");
   background-size: 100% 100%;
@@ -25,132 +117,32 @@ header::after {
   bottom: 0;
   right: 0;
   left: 0;
-  opacity: 1.0;
+  opacity: 1;
   z-index: 1;
 }
 
-h1 {
-  font-family: 'Nunito Sans', sans-serif;
-  font-size: 50px;
-  font-weight: 600;
-}
-
-h2 {
-  font-family: 'Anton', sans-serif;
-  font-size: 40px;
-}
-
-h3{
-  font-family: 'Raleway', sans-serif;
-  font-size: 30px;
-  font-weight: 800;
-}
-
-
-.accent-bar {
-  background-color: #587297;
-  height: 10px;
-  width: 50px;
-}
-
-.icon {
-  width: 100px;
-  height: 100px;
-  margin: 15px;
-}
-
-.contact-button {
+img.contact-button {
   width: 50px;
   height: 50px;
   margin: 10px;
 }
-
-.contact-list {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+img.icon {
+  width: 100px;
+  height: 100px;
+  margin: 15px;
 }
-
-.encourage-div {
-  background-image: url('../../public/images/encourage-screen-static.gif');
-  background-size: 100% 200px;
-  background-repeat: no-repeat;
-  border-bottom: 1px solid lightgrey;
-  height: 200px;
-  width: 100%;
-  z-index: 1000;
-}
-
-.encourage-div:hover {
-  background-image: url('../../public/images/encourage-screen.gif');
-}
-
-.my-photo {
+img.my-photo {
   position: relative;
   width: 200px;
   z-index: 2;
   padding: 0;
 }
 
-.name-section {
-  padding: 10px 0 20px 0;
-  height: 130px;
-}
-
-.resume-text {
+p.resume-text {
   color: #587297;
   font-size: 20px;
   font-weight: 800;
   margin-top: 20px;
-}
-
-.section-header {
-  padding-bottom: 30px;
-  padding-left: 0px;
-}
-
-.simon-div {
-  background-image: url('../../public/images/simon-screen-static2.gif');
-  background-size: 100% 200px;
-  background-repeat: no-repeat;
-  border-bottom: 1px solid lightgrey;
-  height: 200px;
-  width: 100%;
-  z-index: 1000;
-}
-
-.simon-div:hover {
-  background-image: url('../../public/images/simon-screen2.gif');
-}
-
-.skill-list {
-  border: 5px solid black;
-  border-radius: 50px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 20px;
-}
-
-.tic-tac-toe-div {
-  background-image: url('../../public/images/tic-tac-toe-screen-static.gif');
-  background-size: 100% 200px;
-  background-repeat: no-repeat;
-  border-bottom: 1px solid lightgrey;
-  height: 200px;
-  width: 100%;
-  z-index: 1000;
-}
-
-.tic-tac-toe-div:hover {
-  background-image: url('../../public/images/tic-tac-toe-screen.gif');
-}
-
-
-.top-header {
-  position: relative;
-  width: 100vw;
-  top: 193px;
 }
 
 @media (min-width: 992px) {
@@ -158,7 +150,6 @@ h3{
     padding: 0 0 10px;
   }
 }
-
 section {
   padding: 150px 0;
 }
@@ -166,3 +157,5 @@ section {
 .portfolio-item {
   margin-bottom: 30px;
 }
+
+/*# sourceMappingURL=main.css.map */
