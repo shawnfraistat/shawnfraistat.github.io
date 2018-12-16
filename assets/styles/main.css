@@ -7,7 +7,7 @@ body {
   font-family: "Raleway", sans-serif;
 }
 
-div.about-div {
+div.about-container {
   opacity: 0;
   transition: 1s;
   position: relative;
@@ -18,10 +18,20 @@ div.accent-bar {
   height: 10px;
   width: 50px;
 }
+div.contact-header {
+  left: -300px;
+  opacity: 0;
+  position: relative;
+  transition: 1s;
+}
 div.contact-list {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  left: 300px;
+  opacity: 0;
+  position: relative;
+  transition: 1s;
 }
 div.encourage-div {
   background-image: url("../../public/images/encourage-screen-static.gif");
@@ -40,6 +50,41 @@ div.name-section {
   padding: 10px 0 20px 0;
   height: 130px;
 }
+div.projects1 {
+  position: relative;
+  opacity: 0;
+  transition: 1s;
+}
+div.projects2 {
+  position: relative;
+  top: -10px;
+  opacity: 0;
+  transition: 1s;
+}
+div.projects3 {
+  position: relative;
+  left: -300px;
+  opacity: 0;
+  transition: 1s;
+}
+div.projects4 {
+  position: relative;
+  left: 300px;
+  opacity: 0;
+  transition: 1s;
+}
+div.projects5 {
+  position: relative;
+  left: -300px;
+  opacity: 0;
+  transition: 1s;
+}
+div.projects6 {
+  position: relative;
+  left: 300px;
+  opacity: 0;
+  transition: 1s;
+}
 div.section-header {
   padding-bottom: 30px;
   padding-left: 0px;
@@ -57,13 +102,23 @@ div.simon-div {
 div.simon-div:hover {
   background-image: url("../../public/images/simon-screen2.gif");
 }
-div.skill-list {
+div.skills-header {
+  left: -300px;
+  opacity: 0;
+  position: relative;
+  transition: 1s;
+}
+div.skills-list {
   border: 5px solid black;
   border-radius: 50px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  left: 300px;
+  opacity: 0;
   padding: 20px;
+  position: relative;
+  transition: 1s;
 }
 div.tic-tac-toe-div {
   background-image: url("../../public/images/tic-tac-toe-screen-static.gif");

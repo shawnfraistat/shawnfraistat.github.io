@@ -2,15 +2,96 @@
 
 const scrollEffects = function () {
   const scrollPercent = (document.body.scrollTop + document.documentElement.scrollTop) / (document.documentElement.scrollHeight - document.documentElement.clientHeight)
-  if (scrollPercent > 0.05) {
+  // "about" section
+  if (scrollPercent > 0.02) {
     console.log('moved past 0.1')
-    $('.about-div').css('opacity', 1)
-    $('.about-div').css('transform', 'translateX(300px)')
+    $('.about-container').css('opacity', 1)
+    $('.about-container').css('transform', 'translateX(300px)')
   }
-  if (scrollPercent <= 0.05) {
-    console.log('moved past 0.1')
-    $('.about-div').css('opacity', 0)
-    $('.about-div').css('transform', 'translateX(-300px)')
+  if (scrollPercent <= 0.02) {
+    $('.about-container').css('opacity', 0)
+    $('.about-container').css('transform', 'translateX(-300px)')
+  }
+  // "projects" section
+  if (scrollPercent > 0.15) {
+    $('.projects1').css('opacity', 1)
+  }
+  if (scrollPercent <= 0.15) {
+    $('.projects1').css('opacity', 0)
+  }
+  if (scrollPercent > 0.25) {
+    $('.projects2').css('opacity', 1)
+    $('.projects2').css('transform', 'translateY(-10px)')
+  }
+  if (scrollPercent <= 0.25) {
+    $('.projects2').css('opacity', 0)
+    $('.projects2').css('transform', 'translateY(10px)')
+  }
+  if (scrollPercent > 0.40) {
+    $('.projects3').css('opacity', 1)
+    $('.projects3').css('transform', 'translateX(300px)')
+  }
+  if (scrollPercent <= 0.40) {
+    $('.projects3').css('opacity', 0)
+    $('.projects3').css('transform', 'translateX(-300px)')
+  }
+  if (scrollPercent > 0.40) {
+    $('.projects4').css('opacity', 1)
+    $('.projects4').css('transform', 'translateX(-300px)')
+  }
+  if (scrollPercent <= 0.40) {
+    $('.projects4').css('opacity', 0)
+    $('.projects4').css('transform', 'translateX(300px)')
+  }
+  if (scrollPercent > 0.50) {
+    $('.projects5').css('opacity', 1)
+    $('.projects5').css('transform', 'translateX(300px)')
+  }
+  if (scrollPercent <= 0.50) {
+    $('.projects5').css('opacity', 0)
+    $('.projects5').css('transform', 'translateX(-300px)')
+  }
+  if (scrollPercent > 0.50) {
+    $('.projects6').css('opacity', 1)
+    $('.projects6').css('transform', 'translateX(-300px)')
+  }
+  if (scrollPercent <= 0.50) {
+    $('.projects6').css('opacity', 0)
+    $('.projects6').css('transform', 'translateX(300px)')
+  }
+  // "skills" section
+  if (scrollPercent > 0.75) {
+    $('.skills-header').css('opacity', 1)
+    $('.skills-header').css('transform', 'translateX(300px)')
+  }
+  if (scrollPercent <= 0.75) {
+    $('.skills-header').css('opacity', 0)
+    $('.skills-header').css('transform', 'translateX(-300px)')
+  }
+  if (scrollPercent > 0.75) {
+    $('.skills-list').css('opacity', 1)
+    $('.skills-list').css('transform', 'translateX(-300px)')
+  }
+  if (scrollPercent <= 0.75) {
+    $('.skills-list').css('opacity', 0)
+    $('.skills-list').css('transform', 'translateX(300px)')
+  }
+  // "contact" section
+  if (scrollPercent > 0.90) {
+    $('.contact-header').css('opacity', 1)
+    $('.contact-header').css('transform', 'translateX(300px)')
+  }
+  if (scrollPercent <= 0.90) {
+    $('.contact-header').css('opacity', 0)
+    $('.contact-header').css('transform', 'translateX(-300px)')
+  }
+  if (scrollPercent > 0.90) {
+    $('.contact-list').css('opacity', 1)
+    $('.contact-list').css('transform', 'translateX(-300px)')
+  }
+  if (scrollPercent <= 0.90) {
+    $('.contact-list').css('opacity', 0)
+    $('.contact-list').css('transform', 'translateX(300px)')
   }
 }
 

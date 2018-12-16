@@ -9,7 +9,7 @@ body {
 }
 
 div {
-  &.about-div {
+  &.about-container {
     opacity: 0;
     transition: 1.0s;
     position: relative;
@@ -22,10 +22,21 @@ div {
     width: 50px;
   }
 
+  &.contact-header {
+    left: -300px;
+    opacity: 0;
+    position: relative;
+    transition: 1.0s;
+  }
+
   &.contact-list {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    left: 300px;
+    opacity: 0;
+    position: relative;
+    transition: 1.0s;
   }
 
   &.encourage-div {
@@ -48,6 +59,47 @@ div {
     height: 130px;
   }
 
+  &.projects1 {
+    position: relative;
+    opacity: 0;
+    transition: 1.0s;
+  }
+
+  &.projects2 {
+    position: relative;
+    top: -10px;
+    opacity: 0;
+    transition: 1.0s;
+  }
+
+  &.projects3 {
+    position: relative;
+    left: -300px;
+    opacity: 0;
+    transition: 1.0s;
+  }
+
+  &.projects4 {
+    position: relative;
+    left: 300px;
+    opacity: 0;
+    transition: 1.0s;
+  }
+
+  &.projects5 {
+    position: relative;
+    left: -300px;
+    opacity: 0;
+    transition: 1.0s;
+  }
+
+  &.projects6 {
+    position: relative;
+    left: 300px;
+    opacity: 0;
+    transition: 1.0s;
+  }
+
   &.section-header {
     padding-bottom: 30px;
     padding-left: 0px;
@@ -68,13 +120,24 @@ div {
     }
   }
 
-  &.skill-list {
+  &.skills-header {
+    left: -300px;
+    opacity: 0;
+    position: relative;
+    transition: 1.0s;
+  }
+
+  &.skills-list {
     border: 5px solid black;
     border-radius: 50px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    left: 300px;
+    opacity: 0;
     padding: 20px;
+    position: relative;
+    transition: 1.0s;
   }
 
   &.tic-tac-toe-div {
