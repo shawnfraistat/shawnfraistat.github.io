@@ -34,8 +34,8 @@
           var captchaContainer = null
           var loadCaptcha = function () {
             captchaContainer = grecaptcha.render('recaptcha-div', {
-              'sitekey': '6Lc9CosUAAAAANSfTgW9b9ZPMbrupJO3ClgDyjex',
-              'callback': function (response) {
+              sitekey: '6Lc9CosUAAAAANSfTgW9b9ZPMbrupJO3ClgDyjex',
+              callback: function (response) {
                 console.log(response)
                 if (response.success) {
                   console.log('user solved captcha')
