@@ -36,7 +36,7 @@
             captchaContainer = grecaptcha.render('recaptcha-div', {
               sitekey: '6Lc9CosUAAAAANSfTgW9b9ZPMbrupJO3ClgDyjex',
               callback: function (response) {
-                var JSONResponse = JSON.parse(resposne)
+                var JSONResponse = JSON.parse(response)
                 console.log(response)
                 console.log(JSONResponse)
                 if (response.success) {
