@@ -28,6 +28,31 @@
     <!-- fonts -->
     <link href="https://fonts.googleapis.com/css?family=Anton|Josefin+Sans|Nunito+Sans|Raleway" rel="stylesheet">
 
+    <script type="text/javascript">
+      var onLoadCallBack = () => {
+        $('#email-me').on('click', function () {
+          var captchaContainer = null
+          var loadCaptcha = function () {
+            captchaContainer = grecaptcha.render('recaptcha-div', {
+              'sitekey': '6Lc9CosUAAAAANSfTgW9b9ZPMbrupJO3ClgDyjex',
+              'callback': function (response) {
+                if (response.succcess) {
+                  console.log('user solved captcha')
+                  window.location.href = "mailto:shawn.fraistat@gmail.com"
+                }
+              }
+            })
+          }
+          loadCaptcha()
+        })
+      }
+    </script>
+
+    <!-- recaptcha -->
+    <script src='https://www.google.com/recaptcha/api.js?onload=onLoadCallBack&render=explicit' async defer>
+
+    </script>
+
   </head>
 
   <body id="page-top">
@@ -212,10 +237,13 @@
               <div class="accent-bar"></div>
             </div>
             <div class="contact-list">
-              <img class="contact-button hvr-grow" src="./public/images/mail2.png" alt="Email me">
+              <!-- <div class="g-recaptcha" data-sitekey="6Lc9CosUAAAAANSfTgW9b9ZPMbrupJO3ClgDyjex"> -->
+              <img class="contact-button hvr-grow" id="email-me" src="./public/images/mail2.png" alt="Email me">
+              <!-- </div> -->
               <a href="https://www.linkedin.com/in/shawn-fraistat/"><img class="contact-button hvr-grow" src="./public/icons/linkedin/linkedin-plain.svg" alt="LinkedIn page"></a>
               <a href="https://github.com/shawnfraistat"><img class="contact-button hvr-grow" src="./public/icons/github/github-original.svg" alt="Github page"></a>
             </div>
+            <div class="recaptcha-div" id="recaptcha-div"></div>
           </div>
         </div>
       </div>
@@ -245,6 +273,9 @@
     <!-- EZView.js -->
     <script src="assets/scripts/EZView.js"></script>
     <script src="assets/scripts/draggable.js"></script>
+
+
+
   </body>
 
 </html>

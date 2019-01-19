@@ -126,6 +126,7 @@ $(() => {
   $(function () {
     $('.resume-link').EZView()
   })
+  
   // add event listener to implement effects on scroll
   window.addEventListener('scroll', scrollEffects)
 
