@@ -28,39 +28,6 @@
     <!-- fonts -->
     <link href="https://fonts.googleapis.com/css?family=Anton|Josefin+Sans|Nunito+Sans|Raleway" rel="stylesheet">
 
-    <script type="text/javascript">
-      var onLoadCallBack = () => {
-        $('#email-me').on('click', function () {
-          var captchaContainer = null
-          var loadCaptcha = function () {
-            captchaContainer = grecaptcha.render('recaptcha-div', {
-              sitekey: '6Lc9CosUAAAAANSfTgW9b9ZPMbrupJO3ClgDyjex',
-              callback: function (res) {
-                console.log('inside callback, res is', res)
-                $.post('https://www.google.com/recaptcha/api/siteverify', {
-                  response: res,
-                  secret: '6Lc9CosUAAAAANSfTgW9b9ZPMbrupJO3ClgDyjex'
-                 })
-                .then(res => {
-                  console.log('inside .then, res is', res)
-                  if (res.success) {
-                  console.log('user solved captcha')
-                  window.location.href = "mailto:shawn.fraistat@gmail.com"
-                  }
-                })
-              }
-            })
-          }
-          loadCaptcha()
-        })
-      }
-    </script>
-
-    <!-- recaptcha -->
-    <script src='https://www.google.com/recaptcha/api.js?onload=onLoadCallBack&render=explicit' async defer>
-
-    </script>
-
   </head>
 
   <body id="page-top">
@@ -245,13 +212,10 @@
               <div class="accent-bar"></div>
             </div>
             <div class="contact-list">
-              <!-- <div class="g-recaptcha" data-sitekey="6Lc9CosUAAAAANSfTgW9b9ZPMbrupJO3ClgDyjex"> -->
-              <img class="contact-button hvr-grow" id="email-me" src="./public/images/mail2.png" alt="Email me">
-              <!-- </div> -->
+              <a href="mailto:shawn.fraistat@gmail.com"><img class="contact-button hvr-grow" id="email-me" src="./public/images/mail2.png" alt="Email me"></a>
               <a href="https://www.linkedin.com/in/shawn-fraistat/"><img class="contact-button hvr-grow" src="./public/icons/linkedin/linkedin-plain.svg" alt="LinkedIn page"></a>
               <a href="https://github.com/shawnfraistat"><img class="contact-button hvr-grow" src="./public/icons/github/github-original.svg" alt="Github page"></a>
             </div>
-            <div class="recaptcha-div" id="recaptcha-div"></div>
           </div>
         </div>
       </div>
