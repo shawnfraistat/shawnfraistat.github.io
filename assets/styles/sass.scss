@@ -59,6 +59,21 @@ div {
     height: 130px;
   }
 
+  &.petsitter-div {
+    background-image: url('../../public/images/petsitter-screen-static.png');
+    background-size: 100% 400px;
+    background-repeat: no-repeat;
+    border-bottom: 1px solid lightgrey;
+    height: 400px;
+    transition: 0.1s;
+    width: 100%;
+    z-index: 1000;
+
+    &:hover {
+      background-image: url('../../public/images/petsitter-screen.gif');
+    }
+  }
+
   &.projects1 {
     position: relative;
     opacity: 0;
@@ -100,11 +115,6 @@ div {
     transition: 1.0s;
   }
 
-  &.recaptcha-div {
-    display: flex;
-    justify-content: center;
-  }
-
   &.section-header {
     padding-bottom: 30px;
     padding-left: 0px;
@@ -143,6 +153,21 @@ div {
     padding: 20px;
     position: relative;
     transition: 1.0s;
+  }
+
+   &.telaroid-div {
+    background-image: url('../../public/images/telaroid-screen-static.png');
+    background-size: 100% 200px;
+    background-repeat: no-repeat;
+    border-bottom: 1px solid lightgrey;
+    height: 200px;
+    transition: 0.1s;
+    width: 100%;
+    z-index: 1000;
+
+    &:hover {
+      background-image: url('../../public/images/telaroid-screen.png');
+    }
   }
 
   &.tic-tac-toe-div {

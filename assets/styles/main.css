@@ -42,6 +42,17 @@ div.encourage-div {
 div.name-section {
   padding: 10px 0 20px 0;
   height: 130px; }
+div.petsitter-div {
+  background-image: url("../../public/images/petsitter-screen-static.png");
+  background-size: 100% 400px;
+  background-repeat: no-repeat;
+  border-bottom: 1px solid lightgrey;
+  height: 400px;
+  transition: 0.1s;
+  width: 100%;
+  z-index: 1000; }
+  div.petsitter-div:hover {
+    background-image: url("../../public/images/petsitter-screen.gif"); }
 div.projects1 {
   position: relative;
   opacity: 0;
@@ -71,9 +82,6 @@ div.projects6 {
   left: 300px;
   opacity: 0;
   transition: 1.0s; }
-div.recaptcha-div {
-  display: flex;
-  justify-content: center; }
 div.section-header {
   padding-bottom: 30px;
   padding-left: 0px; }
@@ -104,6 +112,17 @@ div.skills-list {
   padding: 20px;
   position: relative;
   transition: 1.0s; }
+div.telaroid-div {
+  background-image: url("../../public/images/telaroid-screen-static.png");
+  background-size: 100% 200px;
+  background-repeat: no-repeat;
+  border-bottom: 1px solid lightgrey;
+  height: 200px;
+  transition: 0.1s;
+  width: 100%;
+  z-index: 1000; }
+  div.telaroid-div:hover {
+    background-image: url("../../public/images/telaroid-screen.png"); }
 div.tic-tac-toe-div {
   background-image: url("../../public/images/tic-tac-toe-screen-static.gif");
   background-size: 100% 200px;
