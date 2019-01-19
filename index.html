@@ -35,14 +35,19 @@
           var loadCaptcha = function () {
             captchaContainer = grecaptcha.render('recaptcha-div', {
               sitekey: '6Lc9CosUAAAAANSfTgW9b9ZPMbrupJO3ClgDyjex',
-              callback: function (response) {
-                var JSONResponse = JSON.parse(response)
-                console.log(response)
-                console.log(JSONResponse)
-                if (response.success) {
+              callback: function (res) {
+                console.log('inside callback, res is', res)
+                $.post('https://www.google.com/recaptcha/api/siteverify', {
+                  response: res,
+                  secret: '6Lc9CosUAAAAANSfTgW9b9ZPMbrupJO3ClgDyjex'
+                 })
+                .then(res => {
+                  console.log('inside .then, res is', res)
+                  if (res.success) {
                   console.log('user solved captcha')
                   window.location.href = "mailto:shawn.fraistat@gmail.com"
-                }
+                  }
+                })
               }
             })
           }
