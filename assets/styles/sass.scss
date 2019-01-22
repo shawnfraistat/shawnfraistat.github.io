@@ -4,6 +4,8 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-scrolling-nav/blob/master/LICENSE)
  */
 
+$charcoal: #212529;
+
 :root:before {
   content: url('../../public/images/encourage-screen-static.gif')
            url('../../public/images/encourage-screen.gif')
@@ -58,8 +60,10 @@ div {
   }
 
   &.encourage-div {
+    background-color: lightgrey;
     background-image: url('../../public/images/encourage-screen-static.gif');
-    background-size: 100% 200px;
+    background-position: center;
+    background-size: contain;
     background-repeat: no-repeat;
     border-bottom: 1px solid lightgrey;
     height: 200px;
@@ -78,9 +82,11 @@ div {
   }
 
   &.petsitter-div {
+    background-color: lightgrey;
     background-image: url('../../public/images/petsitter-screen-static.png');
-    background-size: 100% 400px;
+    background-position: center;
     background-repeat: no-repeat;
+    background-size: contain;
     border-bottom: 1px solid lightgrey;
     height: 400px;
     transition: 0.1s;
@@ -143,9 +149,11 @@ div {
   }
 
   &.simon-div {
-    background-image: url('../../public/images/simon-screen-static2.gif');
-    background-size: 100% 200px;
+    background-color: lightgrey;
+    background-image: url('../../public/images/simon-screen-static.gif');
+    background-position: center;
     background-repeat: no-repeat;
+    background-size: contain;
     border-bottom: 1px solid lightgrey;
     height: 200px;
     transition: 0.1s;
@@ -153,7 +161,7 @@ div {
     z-index: 1000;
 
     &:hover {
-      background-image: url('../../public/images/simon-screen2.gif');
+      background-image: url('../../public/images/simon-screen.gif');
     }
   }
 
@@ -178,9 +186,11 @@ div {
   }
 
    &.telaroid-div {
+    background-color: lightgrey;
     background-image: url('../../public/images/telaroid-screen-static.png');
-    background-size: 100% 200px;
+    background-position: center;
     background-repeat: no-repeat;
+    background-size: contain;
     border-bottom: 1px solid lightgrey;
     height: 200px;
     transition: 0.1s;
@@ -193,9 +203,11 @@ div {
   }
 
   &.tic-tac-toe-div {
+    background-color:lightgrey;
     background-image: url('../../public/images/tic-tac-toe-screen-static.gif');
-    background-size: 100% 200px;
+    background-position: center;
     background-repeat: no-repeat;
+    background-size: contain;
     border-bottom: 1px solid lightgrey;
     height: 200px;
     transition: 0.1s;

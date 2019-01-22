@@ -37,8 +37,10 @@ div.contact-list {
   position: relative;
   transition: 1.0s; }
 div.encourage-div {
+  background-color: lightgrey;
   background-image: url("../../public/images/encourage-screen-static.gif");
-  background-size: 100% 200px;
+  background-position: center;
+  background-size: contain;
   background-repeat: no-repeat;
   border-bottom: 1px solid lightgrey;
   height: 200px;
@@ -51,9 +53,11 @@ div.name-section {
   padding: 10px 0 20px 0;
   height: 130px; }
 div.petsitter-div {
+  background-color: lightgrey;
   background-image: url("../../public/images/petsitter-screen-static.png");
-  background-size: 100% 400px;
+  background-position: center;
   background-repeat: no-repeat;
+  background-size: contain;
   border-bottom: 1px solid lightgrey;
   height: 400px;
   transition: 0.1s;
@@ -96,16 +100,18 @@ div.section-header {
   padding-bottom: 30px;
   padding-left: 0px; }
 div.simon-div {
-  background-image: url("../../public/images/simon-screen-static2.gif");
-  background-size: 100% 200px;
+  background-color: lightgrey;
+  background-image: url("../../public/images/simon-screen-static.gif");
+  background-position: center;
   background-repeat: no-repeat;
+  background-size: contain;
   border-bottom: 1px solid lightgrey;
   height: 200px;
   transition: 0.1s;
   width: 100%;
   z-index: 1000; }
   div.simon-div:hover {
-    background-image: url("../../public/images/simon-screen2.gif"); }
+    background-image: url("../../public/images/simon-screen.gif"); }
 div.skills-header {
   left: -300px;
   opacity: 0;
@@ -123,9 +129,11 @@ div.skills-list {
   position: relative;
   transition: 1.0s; }
 div.telaroid-div {
+  background-color: lightgrey;
   background-image: url("../../public/images/telaroid-screen-static.png");
-  background-size: 100% 200px;
+  background-position: center;
   background-repeat: no-repeat;
+  background-size: contain;
   border-bottom: 1px solid lightgrey;
   height: 200px;
   transition: 0.1s;
@@ -134,9 +142,11 @@ div.telaroid-div {
   div.telaroid-div:hover {
     background-image: url("../../public/images/telaroid-screen.png"); }
 div.tic-tac-toe-div {
+  background-color: lightgrey;
   background-image: url("../../public/images/tic-tac-toe-screen-static.gif");
-  background-size: 100% 200px;
+  background-position: center;
   background-repeat: no-repeat;
+  background-size: contain;
   border-bottom: 1px solid lightgrey;
   height: 200px;
   transition: 0.1s;
