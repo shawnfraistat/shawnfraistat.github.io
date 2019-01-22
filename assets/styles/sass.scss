@@ -4,6 +4,24 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-scrolling-nav/blob/master/LICENSE)
  */
 
+:root:before {
+  content: url('../../public/images/encourage-screen-static.gif')
+           url('../../public/images/encourage-screen.gif')
+           url('../../public/images/petsitter-screen-static.png')
+           url('../../public/images/petsitter-screen.gif')
+           url('../../public/images/simon-screen-static2.gif')
+           url('../../public/images/simon-screen2.gif')
+           url('../../public/images/telaroid-screen-static.png')
+           url('../../public/images/telaroid-screen.png')
+           url('../../public/images/tic-tac-toe-screen-static.gif')
+           url('../../public/images/tic-tac-toe-screen.gif');
+  /* partial fallback */
+  background-image: url('../../public/images/encourage-screen-static.gif');
+  visibility: hidden;
+  position: absolute;
+  left: -999em;
+}
+
 body {
   font-family: 'Raleway', sans-serif;
 }
