@@ -53,6 +53,8 @@ div.petsitter-div {
   z-index: 1000; }
   div.petsitter-div:hover {
     background-image: url("../../public/images/petsitter-screen.gif"); }
+div.portfolio-item {
+  margin-bottom: 30px; }
 div.projects1 {
   position: relative;
   opacity: 0;
@@ -191,13 +193,14 @@ p.resume-text {
   font-weight: 800;
   margin-top: 20px; }
 
-@media (min-width: 992px) {
-  header {
-    padding: 0 0 10px; } }
 section {
   padding: 150px 0; }
 
-.portfolio-item {
-  margin-bottom: 30px; }
+.resume-link:hover {
+  cursor: pointer; }
+
+@media (min-width: 992px) {
+  header {
+    padding: 0 0 10px; } }
 
 /*# sourceMappingURL=main.css.map */

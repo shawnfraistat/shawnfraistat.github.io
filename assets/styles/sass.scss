@@ -74,6 +74,10 @@ div {
     }
   }
 
+  &.portfolio-item {
+    margin-bottom: 30px;
+  }
+
   &.projects1 {
     position: relative;
     opacity: 0;
@@ -260,16 +264,19 @@ p {
   }
 }
 
+section {
+  padding: 150px 0;
+}
+
+.resume-link {
+  &:hover {
+    cursor: pointer;
+  }
+}
+
 @media (min-width: 992px) {
   header {
     padding: 0 0 10px;
   }
 }
 
-section {
-  padding: 150px 0;
-}
-
-.portfolio-item {
-  margin-bottom: 30px;
-}

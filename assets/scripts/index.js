@@ -2,16 +2,6 @@
 
 const scrollEffects = function () {
   const scrollPercent = (document.body.scrollTop + document.documentElement.scrollTop) / (document.documentElement.scrollHeight - document.documentElement.clientHeight)
-  // "about" section
-  // if (scrollPercent >= 0.15) {
-  //   console.log('moved past 0.0')
-  //   $('.about-container').css('opacity', 1)
-  //   $('.about-container').css('transform', 'translateX(300px)')
-  // }
-  // if (scrollPercent <= 0.15) {
-  //   $('.about-container').css('opacity', 0)
-  //   $('.about-container').css('transform', 'translateX(-300px)')
-  // }
   // "projects" section
   if (scrollPercent > 0.15) {
     $('.projects1').css('opacity', 1)
@@ -124,7 +114,7 @@ $(() => {
   })
 
   $(function () {
-    $('.resume-link').EZView()
+    $('.resume-link').on('click', (event) => window.open($(event.target).attr('href'), '_blank'))
   })
   
   // add event listener to implement effects on scroll
